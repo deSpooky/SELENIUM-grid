@@ -1,0 +1,7 @@
+[server]
+port = 4444
+bint-host = true
+
+[router]
+publish-events = "tcp://localhost:4442"
+subscribe-events = "tcp://localhost:4444"

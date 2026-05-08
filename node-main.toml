@@ -1,0 +1,22 @@
+[server]
+port = 5555
+
+[node]
+# Адрес хаба
+hub = "http://localhost:4444"
+
+# Сколько браузеров может быть открыто одновременно
+max-sessions = 2
+
+session-timeout = 120
+heartbeat-period = 30
+
+[[node.driver-configuration]]
+display-name = "Chrome"
+max-sessions = 2
+stereotype = {"browserName" = "chrome"}
+
+[[node.driver-configuration]]
+display-name = "Firefox"
+max-sessions = 2
+stereotype = {"browserName" = "firefox"}

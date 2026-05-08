@@ -1,0 +1,1 @@
+java -jar selenium-server-4.43.0.jar hub --config hub.toml

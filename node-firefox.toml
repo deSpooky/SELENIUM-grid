@@ -1,0 +1,14 @@
+[server]
+port = 5556
+
+[node]
+hub = "http://localhost:4444"
+max-sessions = 4
+
+session-timeout = 120
+heartbeat-period = 30
+
+[[node.driver-configuration]]
+display-name = "Firefox"
+max-sessions = 3
+stereotype = {"browserName" = "firefox"}
