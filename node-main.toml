@@ -1,18 +1,21 @@
 [server]
 port = 5555
+bind-host = true
+host = "10.11.19.21"
 
 [node]
 # Адрес хаба
-hub = "http://localhost:4444"
+hub = "http://10.11.27.31:4444"
 
 # Сколько браузеров может быть открыто одновременно
 max-sessions = 2
+detect-drivers = false
 
 session-timeout = 120
 heartbeat-period = 30
 
 [[node.driver-configuration]]
-display-name = "Chrome"
+display-name = "SpookyChrome"
 max-sessions = 2
 stereotype = {"browserName" = "chrome"}
 
