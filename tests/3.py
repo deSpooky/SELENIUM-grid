@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.options import Options as ChromeOptions
 chrome_options = ChromeOptions()
 
 driver = webdriver.Remote(
-    command_executor="http://192.168.1.100:4444",
+    command_executor="http://10.81.208.101:4444",
     options=chrome_options
 )
 
@@ -17,7 +17,7 @@ try:
     driver.find_element(
         By.NAME,
         value="q"
-    ).send_keys("Selenium Grid Remote Hub")
+    ).send_keys("Selenium Grid")
 
     time.sleep(20)
 

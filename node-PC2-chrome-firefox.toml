@@ -3,7 +3,8 @@ port = 5555
 host = "10.11.30.72"
 bind-host = true
 
+
 [node]
-drivers = ["chrome"]
-max-sessions = 1
+drivers = ["chrome", "firefox"]
+max-sessions = 2
 hub = "http://10.81.208.101:4444"
