@@ -2,13 +2,15 @@
 port = 5556
 
 [node]
+drivers = ["firefox"]
 hub = "http://localhost:4444"
-max-sessions = 4
+max-sessions = 2
+detect-drivers = false
 
 session-timeout = 120
 heartbeat-period = 30
 
 [[node.driver-configuration]]
-display-name = "Firefox"
-max-sessions = 3
+display-name = "SpookyFirefox"
+max-sessions = 2
 stereotype = {"browserName" = "firefox"}

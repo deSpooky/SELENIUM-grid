@@ -1,0 +1,7 @@
+[server]
+port = 5555
+
+[node]
+drivers = ["chrome"]
+max-sessions = 1
+hub = "http://10.81.208.101:4444"
